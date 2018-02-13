@@ -12,7 +12,7 @@ var Word = function(selWord){
             this.wordArr[i].returnChar();
         };
         console.log(this.wordArr.map(function(le){
-            return le.letter;
+            return le.display;
         }).join('')
         );
     };
@@ -22,9 +22,5 @@ var Word = function(selWord){
         };
     };
 };
-
-var car = new Word ("car");
-car.checkLetters();
-car.returnLetters();
 
 module.exports = Word;
